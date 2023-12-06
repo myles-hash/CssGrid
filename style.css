@@ -1,0 +1,65 @@
+body {
+    margin:0;
+  }
+
+  h1 {
+    text-align:left;
+    color:pink;
+    padding-left: 20px;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+    width:750px;
+  }
+
+  .kitten > img {
+    object-fit: contain;
+    width: 100%;
+    border:5px solid black;
+  }
+
+  .kitten1 {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+    align-self:start;
+  }
+
+  .kitten2 {
+    grid-column:4/span 3;
+    grid-row:2;
+    align-self: end;
+  }
+
+  .kitten3 {
+    grid-column: 4/ 5;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .kitten4 {
+    grid-column:3;
+    grid-row:2/span 1;
+    align-self: end;
+  }
+
+  .kitten5 {
+    align-self:center;
+  }
+
+  .kitten6{
+    grid-column-start:6;
+    grid-row-start: 2;
+    align-self:end;
+  }
+
+  .kitten7{
+    align-self:end;
+  }
+
+
+
+
